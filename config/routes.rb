@@ -4,4 +4,7 @@ OauthProviderDemo::Application.routes.draw do
   match '/oauth/authorize' => 'oauth#authorize'
   match '/oauth/access_token' => 'oauth#access_token'
   match '/oauth/user' => 'oauth#user'
+
+	root :to => 'home#index'
+
 end
